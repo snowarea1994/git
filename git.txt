@@ -1,0 +1,18 @@
+配置：
+	git config --globle user.name ""
+	git config --globle user.email ""
+文件提交：
+	(1)git add 文件名
+	(2)git commit -m "消息"
+文件查看：
+	(1)git status
+	(2)git diff 文件名
+版本控制：
+	(1)git log [--pretty=oneline]
+	(2)git reset --hard head^(head^表示前一个版本，head^^表示钱两个版本,head~n表示前n个版本，head还可以为版本号)
+	(3)git reflog 显示git命令记录，可用于查找版本号
+	(4)git reset HEAD file 撤销暂存区文件
+	(5)git checkout -- 文件名（用版本库里的版本提换工作空间里的版本）
+删除文件
+	(1)git rm 文件名
+	(2)git commit -m "消息" 
