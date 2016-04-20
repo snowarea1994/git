@@ -16,3 +16,6 @@
 删除文件
 	(1)git rm 文件名
 	(2)git commit -m "消息" 
+远程仓库
+	(1)git remote add origin git@github.com:snowarea1994/git.git 关联远程仓库
+	(2)git push -u origin master （-u第一次同步是用）同步远程仓库
