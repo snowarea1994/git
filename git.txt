@@ -1,6 +1,8 @@
 配置：
 	git config --globle user.name ""
 	git config --globle user.email ""
+初始化版本库
+	(1)git init
 文件提交：
 	(1)git add 文件名
 	(2)git commit -m "消息"
@@ -20,3 +22,50 @@
 	(1)ssh-keygen -t rsa -C "youremail@example.com" 建立公钥和私钥
 	(2)git remote add origin git@github.com:snowarea1994/git.git 关联远程仓库
 	(3)git push -u origin master （-u第一次同步是用）同步远程仓库
+	(4)git clone git@github.com:snowarea1994/git.git 从远程仓库克隆
+分支创建与合并
+	(1)git checkout -b 分支名 创建并切换到分支
+	(2)git branch -a 查看当前分支
+	(3)git checkout 分支名 回到XXX分支
+	(4)git merge 分支名 合并当前分支
+	(5)git branch -d 分支名 删除当前分支
+
+git help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
