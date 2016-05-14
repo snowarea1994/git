@@ -1,6 +1,6 @@
 配置：
-	git config --globle user.name ""
-	git config --globle user.email ""
+	git config --global user.name ""
+	git config --global user.email ""
 初始化版本库
 	(1)git init
 文件提交：
